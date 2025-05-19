@@ -1,0 +1,100 @@
+<local:MyCard Margin="0,0,0,15" CanSwap="False">
+    <StackPanel Margin="15,10">
+        <Image Height="1000" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/magazines/7/0.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/magazines/7/0.jpg" />
+        </Image.OpacityMask>
+        </Image>
+        <Image Height="1000" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/magazines/7/1.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/magazines/7/1.jpg" />
+        </Image.OpacityMask>
+        </Image>
+        <Image Height="1000" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/magazines/7/2.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/magazines/7/2.jpg" />
+        </Image.OpacityMask>
+        </Image>
+        <Image Height="1000" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/magazines/7/3.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/magazines/7/3.jpg" />
+        </Image.OpacityMask>
+        </Image>
+        <Image Height="1000" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/magazines/7/4.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/magazines/7/4.jpg" />
+        </Image.OpacityMask>
+        </Image>
+        <Image Height="1000" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/magazines/7/5.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/magazines/7/5.jpg" />
+        </Image.OpacityMask>
+        </Image>
+        <Image Height="1000" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/magazines/7/6.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/magazines/7/6.jpg" />
+        </Image.OpacityMask>
+        </Image>
+        <Image Height="1000" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/magazines/7/7.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/magazines/7/7.jpg" />
+        </Image.OpacityMask>
+        </Image>
+        <Image Height="1000" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/magazines/7/8.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/magazines/7/8.jpg" />
+        </Image.OpacityMask>
+        </Image>
+        <Image Height="1000" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/magazines/7/9.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/magazines/7/9.jpg" />
+        </Image.OpacityMask>
+        </Image>
+        <Image Height="1000" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/magazines/7/10.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/magazines/7/10.jpg" />
+        </Image.OpacityMask>
+        </Image>
+        <Image Height="1000" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/magazines/7/11.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/magazines/7/11.jpg" />
+        </Image.OpacityMask>
+        </Image>
+        <Image Height="1000" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/magazines/7/12.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/magazines/7/12.jpg" />
+        </Image.OpacityMask>
+        </Image>
+        <Image Height="1000" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/magazines/7/13.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/magazines/7/13.jpg" />
+        </Image.OpacityMask>
+        </Image>
+        <Image Height="1000" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/magazines/7/14.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/magazines/7/14.jpg" />
+        </Image.OpacityMask>
+        </Image>
+        <Image Height="1000" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/magazines/7/15.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/magazines/7/15.jpg" />
+        </Image.OpacityMask>
+        </Image>
+    </StackPanel>
+</local:MyCard>

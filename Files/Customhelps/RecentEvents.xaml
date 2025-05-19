@@ -1,0 +1,10 @@
+<local:MyCard Margin="0,0,0,15" CanSwap="False">
+    <StackPanel Margin="15,10">
+        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
+	    Logo="https://speed.nmo.net.cn/icons/spyglass.png" Title="康康你的 | 第14期" Info="第七届NFCC小游戏派对"
+	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/kknd/kknd14.json" Type="Clickable" />
+        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
+	    Logo="https://speed.nmo.net.cn/icons/spyglass.png" Title="康康你的 | 第13期" Info="第六届NFCC小游戏派对"
+	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/kknd/kknd13.json" Type="Clickable" />
+    </StackPanel>
+</local:MyCard>

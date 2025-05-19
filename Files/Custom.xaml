@@ -33,10 +33,10 @@
     <local:MyHint Margin="0,6,0,0" Text="游玩模组服请先下载整合包，需要皮肤站登录请访问网站汇总中皮肤站获取教程" IsWarn="False" />
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="1*" /> 
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" /> 
             </Grid.ColumnDefinitions>
             <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" ColorType="Highlight"
                         Text="原版组群服" EventType="启动游戏" EventData="\current|mc.nmo.net.cn" ToolTip="使用当前版本进入原版组群服" />
@@ -47,6 +47,17 @@
             <local:MyButton Grid.Column="3" Margin="0,10,10,0" Height="35" ColorType="Highlight"
                         Text="模组三服" EventType="启动游戏" EventData="\current|modbuild.nmo.net.cn" ToolTip="使用当前版本进入模组三服" />
         </Grid>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Margin="0,0,0,15" CanSwap="False">
+    <StackPanel Margin="15,10">
+        <local:MyListItem Margin="0,1" ToolTip="点击查看近期活动" LogoScale="1.04"
+        Logo="https://speed.nmo.net.cn/icons/diamond_pickaxe.png" Title="近期活动" Info="点击查看近期活动"
+        EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/RecentEvents.json" Type="Clickable" />
+        <local:MyListItem Margin="0,1" ToolTip="点击阅读社刊" LogoScale="1.04"
+        Logo="https://speed.nmo.net.cn/icons/written_book.png" Title="阅读社刊" Info="点击阅读社刊"
+        EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/Magazines.json" Type="Clickable" />
     </StackPanel>
 </local:MyCard>
 
@@ -120,9 +131,9 @@
     <local:MyHint Margin="0,6,0,10" Text="此处提供的整合包不一定是最新版，如果进不去服务器请以群文件为准" IsWarn="False" />
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="1*" /> 
-                <ColumnDefinition Width="1*" /> 
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" /> 
+                <ColumnDefinition Width="*" /> 
             </Grid.ColumnDefinitions>
             <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" ColorType="Highlight"
                         Text="模组1服" EventType="下载文件" EventData="https://speed.nmo.net.cn/files/flywheel-gregtech.zip" ToolTip="飞轮格雷整合包" />
@@ -133,14 +144,75 @@
         </Grid>
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="1*" /> 
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" /> 
             </Grid.ColumnDefinitions>
             <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" ColorType="Highlight" ToolTip="支持zip,rar,mrpack格式的整合包"
                         Text="安装下载的整合包" EventType="安装整合包" />
             <local:MyButton Grid.Column="1" Margin="0,10,10,0" Height="35" ColorType="Highlight" ToolTip="通过网页跳转"
                         Text="加入模组服QQ群" EventType="打开网页"
                         EventData="https://qm.qq.com/cgi-bin/qm/qr?k=TzjrvU6pd9SsTBgTanPuuSp_RiMvZkYo&amp;jump_from=webapi&amp;authKey=I81anCFnQKcNWH0Mze5tpOxEkht2uLB0M6qbSbebr6E+OBuZRBMqKInD33n4UrjH" />
+        </Grid>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="加入我们" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Height="150" HorizontalAlignment="Center"
+                   Source="https://speed.nmo.net.cn/icons/qqun.png"
+                   Margin="0,0,0,0">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="https://speed.nmo.net.cn/icons/qqun.png" />
+            </Image.OpacityMask>
+            </Image>
+            <Image Grid.Column="1" Height="150" HorizontalAlignment="Center"
+                   Source="https://speed.nmo.net.cn/icons/pindao.png"
+                   Margin="0,0,0,0">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="https://speed.nmo.net.cn/icons/pindao.png" />
+            </Image.OpacityMask>
+            </Image>
+            <Image Grid.Column="2" Height="150" HorizontalAlignment="Center"
+                   Source="https://speed.nmo.net.cn/icons/kook.png"
+                   Margin="0,0,0,0">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="https://speed.nmo.net.cn/icons/kook.png" />
+            </Image.OpacityMask>
+            </Image>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <local:MyButton Grid.Column="0" Margin="10,10,10,0" Height="35" Width="145" 
+                         HorizontalAlignment="Center"
+                         ColorType="Highlight"
+                         Text="对外交流群" 
+                         EventType="打开网页" 
+                         EventData="https://qm.qq.com/q/Bs08NtMXQe&amp;personal_qrcode_source=1001" 
+                         ToolTip="点击跳转"/>
+            <local:MyButton Grid.Column="1" Margin="10,10,10,0" Height="35" Width="145"  
+                         HorizontalAlignment="Center"
+                         ColorType="Highlight"
+                         Text="QQ频道" 
+                         EventType="打开网页" 
+                         EventData="https://pd.qq.com/s/20vwol8k9?b=5" 
+                         ToolTip="点击跳转"/>
+            <local:MyButton Grid.Column="2" Margin="10,10,10,0" Height="35" Width="145" 
+                         HorizontalAlignment="Center"
+                         ColorType="Highlight"
+                         Text="Kook语音" 
+                         EventType="打开网页" 
+                         EventData="https://kook.vip/wq7ett" 
+                         ToolTip="点击跳转"/>
         </Grid>
     </StackPanel>
 </local:MyCard>
@@ -158,7 +230,7 @@
                 <TextBlock TextWrapping="Wrap" Margin="0,0,0,8"
                     Text="作者: Iodine_chloride" />
                 <TextBlock TextWrapping="Wrap" Margin="0,0,0,8" FontSize="11"
-                    Text="版本: Beta 0.2.2" />
+                    Text="版本: Beta 0.3.0" />
                 <TextBlock TextWrapping="Wrap" Margin="0,0,0,8" FontSize="11"
                     Text="Powered by NMO" />
             </StackPanel>
