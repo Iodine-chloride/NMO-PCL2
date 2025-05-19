@@ -56,7 +56,7 @@
         Logo="https://speed.nmo.net.cn/icons/diamond_pickaxe.png" Title="近期活动" Info="点击查看近期活动"
         EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/RecentEvents.json" Type="Clickable" />
         <local:MyListItem Margin="0,1" ToolTip="点击阅读社刊" LogoScale="1.04"
-        Logo="https://speed.nmo.net.cn/icons/written_book.png" Title="阅读社刊" Info="点击阅读社刊"
+        Logo="https://speed.nmo.net.cn/icons/bookshelf.png" Title="阅读社刊" Info="点击阅读社刊"
         EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/Magazines.json" Type="Clickable" />
     </StackPanel>
 </local:MyCard>

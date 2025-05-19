@@ -1,11 +1,50 @@
+<StackPanel Margin="0,0,0,15">
+    <local:MyHint Text="此页面正在开发，有些（大部分）功能暂时无法使用，请不要反馈bug" />
+</StackPanel>
 <local:MyCard Margin="0,0,0,15" CanSwap="False">
     <StackPanel Margin="15,10">
         <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/spyglass.png" Title="康康你的 | 第14期" Info="第七届NFCC小游戏派对"
+	    Logo="https://speed.nmo.net.cn/icons/spyglass.webp" Title="康康你的 | 第14期" Info="第七届NFCC小游戏派对"
 	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/kknd/kknd14.json" Type="Clickable" />
         <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/spyglass.png" Title="康康你的 | 第13期" Info="第六届NFCC小游戏派对"
+	    Logo="https://speed.nmo.net.cn/icons/spyglass.webp" Title="康康你的 | 第13期" Info="第六届NFCC小游戏派对"
 	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/kknd/kknd13.json" Type="Clickable" />
+        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
+	    Logo="https://speed.nmo.net.cn/icons/spyglass.webp" Title="康康你的 | 第12期" Info="第五届NFCC小游戏派对"
+	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/kknd/kknd12.json" Type="Clickable" />
+        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
+	    Logo="https://speed.nmo.net.cn/icons/spyglass.webp" Title="康康你的 | 第11期" Info="Undertale主题PVP小游戏"
+	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/kknd/kknd11.json" Type="Clickable" />
+        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
+	    Logo="https://speed.nmo.net.cn/icons/spyglass.webp" Title="康康你的 | 第10期" Info="第四届NFCC小游戏派对"
+	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/kknd/kknd10.json" Type="Clickable" />
+        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
+	    Logo="https://speed.nmo.net.cn/icons/spyglass.webp" Title="康康你的 | 第9期" Info="第三届NFCC小游戏派对"
+	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/kknd/kknd9.json" Type="Clickable" />
+        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
+	    Logo="https://speed.nmo.net.cn/icons/spyglass.webp" Title="康康你的 | 第8期" Info="机械动力铁路：配线与信号系统"
+	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/kknd/kknd8.json" Type="Clickable" />
+        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
+	    Logo="https://speed.nmo.net.cn/icons/spyglass.webp" Title="康康你的 | 第7期" Info="第一届南栀烟火建筑比赛"
+	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/kknd/kknd7.json" Type="Clickable" />
+        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
+	    Logo="https://speed.nmo.net.cn/icons/spyglass.webp" Title="康康你的 | 第6期" Info="以MC模组开发为背景的Java入门系列活动 第一期"
+	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/kknd/kknd6.json" Type="Clickable" />
+        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
+	    Logo="https://speed.nmo.net.cn/icons/spyglass.webp" Title="康康你的 | 第5期" Info="第二届NFCC小游戏派对"
+	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/kknd/kknd5.json" Type="Clickable" />
+        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
+	    Logo="https://speed.nmo.net.cn/icons/spyglass.webp" Title="康康你的 | 第4期" Info="整合包制作之模组安装和KubeJs入门"
+	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/kknd/kknd4.json" Type="Clickable" />
+        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
+	    Logo="https://speed.nmo.net.cn/icons/spyglass.webp" Title="康康你的 | 第3期" Info="文案组创作挑战 第一期"
+	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/kknd/kknd3.json" Type="Clickable" />
+        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
+	    Logo="https://speed.nmo.net.cn/icons/spyglass.webp" Title="康康你的 | 第2期" Info="中秋节趣味小游戏活动"
+	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/kknd/kknd2.json" Type="Clickable" />
+        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
+	    Logo="https://speed.nmo.net.cn/icons/spyglass.webp" Title="康康你的 | 第1期" Info="烟火文字指南 第一期"
+	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/kknd/kknd1.json" Type="Clickable" />
     </StackPanel>
 </local:MyCard>
 <local:MyCard Margin="0,0,0,15" CanSwap="False">

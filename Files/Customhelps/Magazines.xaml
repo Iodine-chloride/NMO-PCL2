@@ -1,40 +1,40 @@
 <local:MyCard Margin="0,0,0,15" CanSwap="False">
     <StackPanel Margin="15,10">
         <local:MyListItem Margin="0,2" ToolTip="点击阅读" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/writable_book.png" Title="NMO社刊 | 第12期" Info="2025.4.1-2025.4.30"
+	    Logo="https://speed.nmo.net.cn/icons/writable_book.webp" Title="NMO社刊 | 第12期" Info="2025.4.1-2025.4.30"
 	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/magazines/12/12.json" Type="Clickable" />
         <local:MyListItem Margin="0,2" ToolTip="点击阅读" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/writable_book.png" Title="NMO社刊 | 第11期" Info="2025.3.1-2025.3.31"
+	    Logo="https://speed.nmo.net.cn/icons/writable_book.webp" Title="NMO社刊 | 第11期" Info="2025.3.1-2025.3.31"
 	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/magazines/11/11.json" Type="Clickable" />
         <local:MyListItem Margin="0,2" ToolTip="点击阅读" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/writable_book.png" Title="NMO社刊 | 第10期" Info="2025.2.1-2025.2.28"
+	    Logo="https://speed.nmo.net.cn/icons/writable_book.webp" Title="NMO社刊 | 第10期" Info="2025.2.1-2025.2.28"
 	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/magazines/10/10.json" Type="Clickable" />
         <local:MyListItem Margin="0,2" ToolTip="点击阅读" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/writable_book.png" Title="NMO社刊 | 第9期" Info="2025.1.1-2025.1.31"
+	    Logo="https://speed.nmo.net.cn/icons/writable_book.webp" Title="NMO社刊 | 第9期" Info="2025.1.1-2025.1.31"
 	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/magazines/9/9.json" Type="Clickable" />
         <local:MyListItem Margin="0,2" ToolTip="点击阅读" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/writable_book.png" Title="NMO社刊 | 第8期" Info="2024.12.9-2024.12.31"
+	    Logo="https://speed.nmo.net.cn/icons/writable_book.webp" Title="NMO社刊 | 第8期" Info="2024.12.9-2024.12.31"
 	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/magazines/8/8.json" Type="Clickable" />
         <local:MyListItem Margin="0,2" ToolTip="点击阅读" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/writable_book.png" Title="NMO社刊 | 第7期" Info="2024.11.25-2024.12.8"
+	    Logo="https://speed.nmo.net.cn/icons/writable_book.webp" Title="NMO社刊 | 第7期" Info="2024.11.25-2024.12.8"
 	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/magazines/7/7.json" Type="Clickable" />
         <local:MyListItem Margin="0,2" ToolTip="点击阅读" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/writable_book.png" Title="NMO社刊 | 第6期" Info="2024.11.11-2024.11.24"
+	    Logo="https://speed.nmo.net.cn/icons/writable_book.webp" Title="NMO社刊 | 第6期" Info="2024.11.11-2024.11.24"
 	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/magazines/6/6.json" Type="Clickable" />
         <local:MyListItem Margin="0,2" ToolTip="点击阅读" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/writable_book.png" Title="NMO社刊 | 第5期" Info="2024.10.28-2024.11.10"
+	    Logo="https://speed.nmo.net.cn/icons/writable_book.webp" Title="NMO社刊 | 第5期" Info="2024.10.28-2024.11.10"
 	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/magazines/5/5.json" Type="Clickable" />
         <local:MyListItem Margin="0,2" ToolTip="点击阅读" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/writable_book.png" Title="NMO社刊 | 第4期" Info="2024.10.14-2024.10.27"
+	    Logo="https://speed.nmo.net.cn/icons/writable_book.webp" Title="NMO社刊 | 第4期" Info="2024.10.14-2024.10.27"
 	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/magazines/4/4.json" Type="Clickable" />
         <local:MyListItem Margin="0,2" ToolTip="点击阅读" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/writable_book.png" Title="NMO社刊 | 第3期" Info="2024.9.30-2024.10.13"
+	    Logo="https://speed.nmo.net.cn/icons/writable_book.webp" Title="NMO社刊 | 第3期" Info="2024.9.30-2024.10.13"
 	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/magazines/3/3.json" Type="Clickable" />
         <local:MyListItem Margin="0,2" ToolTip="点击阅读" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/writable_book.png" Title="NMO社刊 | 第2期" Info="2024.9.16-2024.9.29"
+	    Logo="https://speed.nmo.net.cn/icons/writable_book.webp" Title="NMO社刊 | 第2期" Info="2024.9.16-2024.9.29"
 	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/magazines/2/2.json" Type="Clickable" />
         <local:MyListItem Margin="0,2" ToolTip="点击阅读" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/writable_book.png" Title="NMO社刊 | 第1期" Info="2024.9.2-2024.9.15"
+	    Logo="https://speed.nmo.net.cn/icons/writable_book.webp" Title="NMO社刊 | 第1期" Info="2024.9.2-2024.9.15"
 	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/magazines/1/1.json" Type="Clickable" />
     </StackPanel>
 </local:MyCard>
