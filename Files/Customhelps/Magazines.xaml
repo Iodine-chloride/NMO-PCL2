@@ -1,5 +1,5 @@
-<local:MyCard Margin="0,0,0,15" CanSwap="False">
-    <StackPanel Margin="15,10">
+<local:MyCard Title="近期社刊" Margin="0,0,0,15" CanSwap="False" >
+    <StackPanel Margin="15,40,23,15">
         <local:MyListItem Margin="0,2" ToolTip="点击阅读" LogoScale="1.04"
 	    Logo="https://speed.nmo.net.cn/icons/writable_book.webp" Title="NMO社刊 | 第12期" Info="2025.4.1-2025.4.30"
 	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/magazines/12/12.json" Type="Clickable" />
@@ -9,6 +9,72 @@
         <local:MyListItem Margin="0,2" ToolTip="点击阅读" LogoScale="1.04"
 	    Logo="https://speed.nmo.net.cn/icons/writable_book.webp" Title="NMO社刊 | 第10期" Info="2025.2.1-2025.2.28"
 	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/magazines/10/10.json" Type="Clickable" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="投稿链接/加入NMO文案组" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Height="150" HorizontalAlignment="Center"
+                   Source="https://speed.nmo.net.cn/icons/tougao.png"
+                   Margin="0,0,0,0">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="https://speed.nmo.net.cn/icons/tougao.png" />
+            </Image.OpacityMask>
+            </Image>
+            <Image Grid.Column="1" Height="150" HorizontalAlignment="Center"
+                   Source="https://speed.nmo.net.cn/icons/tougaochakan.png"
+                   Margin="0,0,0,0">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="https://speed.nmo.net.cn/icons/tougaochakan.png" />
+            </Image.OpacityMask>
+            </Image>
+            <Image Grid.Column="2" Height="150" HorizontalAlignment="Center"
+                   Source="https://speed.nmo.net.cn/icons/wenanqun.png"
+                   Margin="0,0,0,0">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="https://speed.nmo.net.cn/icons/wenanqun.png" />
+            </Image.OpacityMask>
+            </Image>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <local:MyButton Grid.Column="0" Margin="10,10,10,0" Height="35" Width="145" 
+                         HorizontalAlignment="Center"
+                         ColorType="Highlight"
+                         Text="投稿链接" 
+                         EventType="打开网页" 
+                         EventData="https://table.nju.edu.cn/dtable/forms/custom/submission/" 
+                         ToolTip="点击跳转"/>
+            <local:MyButton Grid.Column="1" Margin="10,10,10,0" Height="35" Width="145"  
+                         HorizontalAlignment="Center"
+                         ColorType="Highlight"
+                         Text="投稿状态查询" 
+                         EventType="打开网页" 
+                         EventData="https://table.nju.edu.cn/dtable/view-external-links/custom/auto-query/" 
+                         ToolTip="点击跳转"/>
+            <local:MyButton Grid.Column="2" Margin="10,10,10,0" Height="35" Width="145" 
+                         HorizontalAlignment="Center"
+                         ColorType="Highlight"
+                         Text="NMO文案组群" 
+                         EventType="打开网页" 
+                         EventData="https://qm.qq.com/q/GoGWvFJpYc" 
+                         ToolTip="点击跳转"/>
+        </Grid>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="往期社刊" Margin="0,0,0,15" CanSwap="False" >
+    <StackPanel Margin="15,40,23,15">
         <local:MyListItem Margin="0,2" ToolTip="点击阅读" LogoScale="1.04"
 	    Logo="https://speed.nmo.net.cn/icons/writable_book.webp" Title="NMO社刊 | 第9期" Info="2025.1.1-2025.1.31"
 	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/magazines/9/9.json" Type="Clickable" />
@@ -38,6 +104,7 @@
 	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/magazines/1/1.json" Type="Clickable" />
     </StackPanel>
 </local:MyCard>
+
 <local:MyCard Margin="0,0,0,15" CanSwap="False">
     <Grid Margin="10,6">
         <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Left" Margin="4,8,0,0">

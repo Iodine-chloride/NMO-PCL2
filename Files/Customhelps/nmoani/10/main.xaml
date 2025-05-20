@@ -1,41 +1,10 @@
-<StackPanel Margin="0,0,0,15">
-    <local:MyHint Text="此页面及其子页面正在开发，有些（大部分）功能暂时无法使用，请不要反馈bug" />
-</StackPanel>
-
 <local:MyCard Margin="0,0,0,15" CanSwap="False">
     <StackPanel Margin="15,10">
-        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/painting.webp" Title="第九届创作挑战" Info="第九届NMO动画组创作挑战 | 限定主题创作"
-	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/nmoani/9/main.json" Type="Clickable" />
-        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/painting.webp" Title="第八届创作挑战" Info="第八届NMO动画组创作挑战 | 贺图互换"
-	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/nmoani/8/main.json" Type="Clickable" />
-        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/painting.webp" Title="第七届创作挑战" Info="第七届NMO动画组常规活动 "
-	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/nmoani/7/main.json" Type="Clickable" />
-        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/painting.webp" Title="第六届创作挑战" Info="第六届NMO动画组创作挑战 | 限定主题创作"
-	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/nmoani/6/main.json" Type="Clickable" />
-        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/painting.webp" Title="第五届创作挑战" Info="第五届NMO动画组常规活动 "
-	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/nmoani/5/main.json" Type="Clickable" />
-        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/painting.webp" Title="第四届创作挑战" Info="第四届NMO动画组常规活动 | "
-	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/nmoani/4/main.json" Type="Clickable" />
-        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/painting.webp" Title="第三届创作挑战" Info="第三届NMO动画组创作挑战 | 贺图互换"
-	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/nmoani/3/main.json" Type="Clickable" />
-        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/painting.webp" Title="第二届创作挑战" Info="第二届NMO动画组创作挑战 | 限定主题创作"
-	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/nmoani/2/main.json" Type="Clickable" />
-        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/painting.webp" Title="第一届创作挑战" Info="第一届NMO动画组创作挑战 | 新年贺图互换"
-	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/nmoani/1/main.json" Type="Clickable" />
-    </StackPanel>
-</local:MyCard>
-
-<local:MyCard Margin="0,0,0,15" CanSwap="False">
-    <StackPanel Margin="15,10">
+        <TextBlock TextWrapping="Wrap" Margin="-10,0,0,4" FontSize="24" Text="【主题创作提名】"/>
+        <TextBlock TextWrapping="Wrap" Margin="-5,0,0,4" FontSize="20" Text=" 动画组第十届常规活动：主题创作挑战要开始啦，有意参加的同学可以在群聊内以 提名：XX 的形式提名创作主题， "/>
+        <TextBlock TextWrapping="Wrap" Margin="-5,0,0,4" FontSize="20" Text=" 提名ddl为5月22日晚24点 "/>
+        <TextBlock TextWrapping="Wrap" Margin="-5,0,0,4" FontSize="20" Text=" 创作ddl为6月29日晚24点"/>
+        <TextBlock TextWrapping="Wrap" Margin="-5,0,0,4" FontSize="20" Text=" 欢迎大家踊跃提名（加入NMO动画组群聊参与提名） "/>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />

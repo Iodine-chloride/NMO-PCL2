@@ -1,24 +1,24 @@
-<StackPanel Margin="0,0,0,15">
-    <local:MyHint Text="此页面及其子页面正在开发，有些（大部分）功能暂时无法使用，请不要反馈bug" />
-</StackPanel>
-
 <local:MyCard Title="进行中" Margin="0,0,0,15" CanSwap="False" >
     <StackPanel Margin="25,40,23,15">
         <TextBlock TextWrapping="Wrap" Margin="-10,0,0,4" FontSize="24" >
-                暂时没有进行中的活动，您可以申报自己的活动
-            <Underline>
-                <local:MyTextButton Margin="0,0,0,-2" 
-                                  EventType="打开帮助" 
-                                  EventData="https://speed.nmo.net.cn/files/pcl/EventHelp.json"
-                                  FontSize="24"
-                                  Content="点击查看"/>
-            </Underline>
+                暂时没有进行中的活动，您可以在下方申报自己的活动
         </TextBlock>
     </StackPanel>
 </local:MyCard>
 
 <local:MyCard Title="预热中" Margin="0,0,0,15" CanSwap="False" >
     <StackPanel Margin="15,40,23,15">
+        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
+	    Logo="https://speed.nmo.net.cn/icons/painting.webp" Title="NMO动画组创作挑战" Info="第十届NMO动画组创作挑战 | 提名中"
+	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/nmoani/10/main.json" Type="Clickable" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="活动申报" Margin="0,0,0,15" CanSwap="False" >
+    <StackPanel Margin="15,40,23,15">
+        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
+	    Logo="https://speed.nmo.net.cn/icons/paper.webp" Title="申报【康康你的】活动" Info="根据这篇帮助进行活动申报"
+	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/EventHelp.json" Type="Clickable" />
     </StackPanel>
 </local:MyCard>
 
@@ -30,6 +30,34 @@
         <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
 	    Logo="https://speed.nmo.net.cn/icons/painting.webp" Title="NMO动画组系列活动" Info="往期NMO动画组系列活动"
 	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/nmoani/main.json" Type="Clickable" />
+        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
+	    Logo="https://speed.nmo.net.cn/icons/redstone.png" Title="其它活动" Info="往期其它活动"
+	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/misc/main.json" Type="Clickable" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Margin="0,0,0,15" CanSwap="False">
+    <StackPanel Margin="15,10">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Height="150" HorizontalAlignment="Left"
+                   Source="https://speed.nmo.net.cn/icons/huodongbu.png"
+                   Margin="0,0,0,0">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="https://speed.nmo.net.cn/icons/huodongbu.png" />
+            </Image.OpacityMask>
+            </Image>
+            <local:MyButton Grid.Column="1" Margin="10,10,10,0" Height="35" Width="145" 
+                         HorizontalAlignment="Right"
+                         ColorType="Highlight"
+                         Text="NMO活动部群" 
+                         EventType="打开网页" 
+                         EventData="https://qm.qq.com/q/qSmFeY6kJW" 
+                         ToolTip="点击跳转"/>
+        </Grid>
     </StackPanel>
 </local:MyCard>
 
@@ -42,7 +70,7 @@
                 <ImageBrush ImageSource="https://speed.nmo.net.cn/icons/nmo2024.png" />
             </Image.OpacityMask>
             </Image>
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="4,0,0,8" Text="页面维护：Iodine_chloride" />
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="4,0,0,8" Text="活动：NMO活动部 | 页面维护：Iodine_chloride" />
         </StackPanel>
         <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right" Margin="-4,0,0,0">
             <local:MyIconTextButton HorizontalAlignment="Left" Text="提交反馈" ToolTip="有问题或者建议可以在这里提交哦" EventType="打开网页"
