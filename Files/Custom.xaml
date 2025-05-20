@@ -1,4 +1,4 @@
-﻿<StackPanel>
+<StackPanel>
     <TextBlock HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Margin="0,0,0,8">
         <Run Foreground="#80227A" Text="南京大学"/>
         <Run Foreground="#E9C31A" Text="Minecraft"/>
@@ -52,11 +52,11 @@
 
 <local:MyCard Margin="0,0,0,15" CanSwap="False">
     <StackPanel Margin="15,10">
-        <local:MyListItem Margin="0,1" ToolTip="点击查看近期活动" LogoScale="1.04"
-        Logo="https://speed.nmo.net.cn/icons/diamond_pickaxe.png" Title="近期活动" Info="点击查看近期活动"
+        <local:MyListItem Margin="0,1" ToolTip="点击查看社团活动" LogoScale="1.04"
+        Logo="https://speed.nmo.net.cn/icons/diamond_pickaxe.webp" Title="社团活动" Info="点击查看社团活动"
         EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/RecentEvents.json" Type="Clickable" />
         <local:MyListItem Margin="0,1" ToolTip="点击阅读社刊" LogoScale="1.04"
-        Logo="https://speed.nmo.net.cn/icons/bookshelf.png" Title="阅读社刊" Info="点击阅读社刊"
+        Logo="https://speed.nmo.net.cn/icons/bookshelf.webp" Title="阅读社刊" Info="点击阅读社刊"
         EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/Magazines.json" Type="Clickable" />
     </StackPanel>
 </local:MyCard>

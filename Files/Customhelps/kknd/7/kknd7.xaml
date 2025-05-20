@@ -1,35 +1,23 @@
-<StackPanel Margin="0,0,0,15">
-    <local:MyHint Text="此页面及其子页面正在开发，有些（大部分）功能暂时无法使用，请不要反馈bug" />
-</StackPanel>
-
-<local:MyCard Title="进行中" Margin="0,0,0,15" CanSwap="False" >
-    <StackPanel Margin="25,40,23,15">
-        <TextBlock TextWrapping="Wrap" Margin="-10,0,0,4" FontSize="24" >
-                暂时没有进行中的活动，您可以申报自己的活动
+<local:MyCard Margin="0,0,0,15" CanSwap="False">
+    <StackPanel Margin="15,10">
+        <TextBlock TextWrapping="Wrap" Margin="-5,0,0,4" FontSize="20" Text=" 一封来自烟火的邀请函： "/>
+        <TextBlock TextWrapping="Wrap" Margin="-5,0,0,4" FontSize="20" Text=" “南栀烟火”与“难知烟火”在汉语普通话中读音相同，有“很难知道什么是烟火”的含义。南天栀子花（_5EA）很久以来一直在思考 Minecraft 生存与建筑中的一个问题：Minecraft 中的建筑是否需要“烟火气”？如何为 Minecraft 中的建筑增添“烟火气”？以及更进一步地，在现实与虚拟世界中，我们都常提到的“烟火气”究竟有哪些具体的含义？以及为何“人间烟火气，最抚凡人心”？借助本次小型建筑比赛的形式，我们诚邀各位一起来思考这些问题，一起寻找“烟火”的种种含义。 "/>
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="20">
+                欢迎各位参加第一届南栀烟火建筑比赛，有丰厚的奖品和纪念品等待着大家！比赛信息详见《【康康你的】系列第7期活动“南栀烟火建筑比赛 第1届”说明》！
             <Underline>
                 <local:MyTextButton Margin="0,0,0,-2" 
-                                  EventType="打开帮助" 
-                                  EventData="https://speed.nmo.net.cn/files/pcl/EventHelp.json"
-                                  FontSize="24"
-                                  Content="点击查看"/>
+                                  EventType="打开网页" 
+                                  EventData="https://box.nju.edu.cn/f/6da2e345bd1847ba96a4/?dl=1"
+                                  FontSize="20"
+                                  Content="点击下载"/>
             </Underline>
         </TextBlock>
-    </StackPanel>
-</local:MyCard>
-
-<local:MyCard Title="预热中" Margin="0,0,0,15" CanSwap="False" >
-    <StackPanel Margin="15,40,23,15">
-    </StackPanel>
-</local:MyCard>
-
-<local:MyCard Title="往期活动" Margin="0,0,0,15" CanSwap="False" >
-    <StackPanel Margin="15,40,23,15">
-        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/spyglass.webp" Title="康康你的系列活动" Info="往期康康你的系列活动"
-	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/kknd/main.json" Type="Clickable" />
-        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/painting.webp" Title="NMO动画组系列活动" Info="往期NMO动画组系列活动"
-	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/nmoani/main.json" Type="Clickable" />
+        <Image Height="1000" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/kknd/7/kknd7.png">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/kknd/7/kknd7.png" />
+        </Image.OpacityMask>
+        </Image>
     </StackPanel>
 </local:MyCard>
 

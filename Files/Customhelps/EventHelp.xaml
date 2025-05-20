@@ -1,35 +1,27 @@
-<StackPanel Margin="0,0,0,15">
-    <local:MyHint Text="此页面及其子页面正在开发，有些（大部分）功能暂时无法使用，请不要反馈bug" />
-</StackPanel>
-
-<local:MyCard Title="进行中" Margin="0,0,0,15" CanSwap="False" >
-    <StackPanel Margin="25,40,23,15">
-        <TextBlock TextWrapping="Wrap" Margin="-10,0,0,4" FontSize="24" >
-                暂时没有进行中的活动，您可以申报自己的活动
+<local:MyCard Margin="0,0,0,15" CanSwap="False">
+    <StackPanel Margin="15,10">
+        <TextBlock TextWrapping="Wrap" Margin="-10,0,0,4" FontSize="24" Text=" 申报【康康你的】活动 "/>
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="20">
+                第一步，下载申报表格
             <Underline>
                 <local:MyTextButton Margin="0,0,0,-2" 
-                                  EventType="打开帮助" 
-                                  EventData="https://speed.nmo.net.cn/files/pcl/EventHelp.json"
-                                  FontSize="24"
-                                  Content="点击查看"/>
+                                  EventType="打开网页" 
+                                  EventData="https://box.nju.edu.cn/f/17c573c41b4a464789e9/?dl=1"
+                                  FontSize="20"
+                                  Content="点击下载"/>
             </Underline>
         </TextBlock>
-    </StackPanel>
-</local:MyCard>
-
-<local:MyCard Title="预热中" Margin="0,0,0,15" CanSwap="False" >
-    <StackPanel Margin="15,40,23,15">
-    </StackPanel>
-</local:MyCard>
-
-<local:MyCard Title="往期活动" Margin="0,0,0,15" CanSwap="False" >
-    <StackPanel Margin="15,40,23,15">
-        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/spyglass.webp" Title="康康你的系列活动" Info="往期康康你的系列活动"
-	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/kknd/main.json" Type="Clickable" />
-        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/painting.webp" Title="NMO动画组系列活动" Info="往期NMO动画组系列活动"
-	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/nmoani/main.json" Type="Clickable" />
+        <TextBlock TextWrapping="Wrap" Margin="-6,0,0,4" FontSize="20" Text=" 第二步，填写申报表格 "/>
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="20" >
+                第三步，将表格发至1527519027@qq.com
+            <Underline>
+                <local:MyTextButton Margin="0,0,0,-2" 
+                                  EventType="复制文本" 
+                                  EventData="1527519027@qq.com"
+                                  FontSize="20"
+                                  Content="点击复制"/>
+            </Underline>
+        </TextBlock>
     </StackPanel>
 </local:MyCard>
 

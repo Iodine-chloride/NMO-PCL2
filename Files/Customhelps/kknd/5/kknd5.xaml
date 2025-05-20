@@ -1,35 +1,26 @@
-<StackPanel Margin="0,0,0,15">
-    <local:MyHint Text="此页面及其子页面正在开发，有些（大部分）功能暂时无法使用，请不要反馈bug" />
-</StackPanel>
-
-<local:MyCard Title="进行中" Margin="0,0,0,15" CanSwap="False" >
-    <StackPanel Margin="25,40,23,15">
-        <TextBlock TextWrapping="Wrap" Margin="-10,0,0,4" FontSize="24" >
-                暂时没有进行中的活动，您可以申报自己的活动
+<local:MyCard Margin="0,0,0,15" CanSwap="False">
+    <StackPanel Margin="15,10">
+        <TextBlock TextWrapping="Wrap" Margin="-10,0,0,4" FontSize="24" Text="【康康你的】第5期活动暨第2届NFCC小游戏派对即将开赛！欢迎大家积极参赛！"/>
+        <TextBlock TextWrapping="Wrap" Margin="-5,0,0,4" FontSize="20" Text=" 版本：1.20.4 "/>
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="20">
+                IP：nfcc.nmo.net.cn
             <Underline>
                 <local:MyTextButton Margin="0,0,0,-2" 
-                                  EventType="打开帮助" 
-                                  EventData="https://speed.nmo.net.cn/files/pcl/EventHelp.json"
-                                  FontSize="24"
-                                  Content="点击查看"/>
+                                  EventType="复制文本" 
+                                  EventData="nfcc.nmo.net.cn"
+                                  FontSize="20"
+                                  Content="点击复制"/>
             </Underline>
         </TextBlock>
-    </StackPanel>
-</local:MyCard>
-
-<local:MyCard Title="预热中" Margin="0,0,0,15" CanSwap="False" >
-    <StackPanel Margin="15,40,23,15">
-    </StackPanel>
-</local:MyCard>
-
-<local:MyCard Title="往期活动" Margin="0,0,0,15" CanSwap="False" >
-    <StackPanel Margin="15,40,23,15">
-        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/spyglass.webp" Title="康康你的系列活动" Info="往期康康你的系列活动"
-	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/kknd/main.json" Type="Clickable" />
-        <local:MyListItem Margin="0,2" ToolTip="点击查看详情" LogoScale="1.04"
-	    Logo="https://speed.nmo.net.cn/icons/painting.webp" Title="NMO动画组系列活动" Info="往期NMO动画组系列活动"
-	    EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/nmoani/main.json" Type="Clickable" />
+        <TextBlock TextWrapping="Wrap" Margin="-5,0,0,4" FontSize="20" Text=" 时间：2024.10.13 19:00入场 19:30开赛 "/>
+        <TextBlock TextWrapping="Wrap" Margin="-5,0,0,4" FontSize="20" Text=" 由于游戏地图最多容纳24位玩家，故依照“先到先得”，先进入服务器且未开启“旁观者模式”的24位玩家成为NFCC2的参赛者，若中途退出则顺位替补。未完整参赛的部分不予补偿。"/>
+        <TextBlock TextWrapping="Wrap" Margin="-5,0,0,4" FontSize="20" Text=" 大家记得多录一些NFCC2的比赛情况哦～ "/>
+        <Image Height="1000" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/kknd/5/kknd5.png">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/kknd/5/kknd5.png" />
+        </Image.OpacityMask>
+        </Image>
     </StackPanel>
 </local:MyCard>
 
