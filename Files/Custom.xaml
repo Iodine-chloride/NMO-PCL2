@@ -78,16 +78,16 @@
                     EventType="打开网页" EventData="https://space.bilibili.com/646892894" Type="Clickable" />
         <TextBlock TextWrapping="Wrap" Text=" ========网页地图======== " Margin="5,0" Foreground="{DynamicResource ColorBrush3}" HorizontalAlignment="Center" FontSize="18" />
         <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://map.survival.nmo.net.cn/assets/logo.png" Title="生存服网页地图" Info="mc.nmo.net.cn"
+                    Logo="https://speed.nmo.net.cn/icons/bluemap.png" Title="生存服网页地图" Info="mc.nmo.net.cn"
                     EventType="打开网页" EventData="https://map.survival.nmo.net.cn/" Type="Clickable" />
         <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://map.mod.nmo.net.cn/assets/logo.png" Title="模组1服网页地图" Info="mod.nmo.net.cn"
+                    Logo="https://speed.nmo.net.cn/icons/bluemap.png" Title="模组1服网页地图" Info="mod.nmo.net.cn"
                     EventType="打开网页" EventData="https://map.mod.nmo.net.cn/" Type="Clickable" />
         <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://map.modbuild.nmo.net.cn/assets/logo.png" Title="模组3服网页地图" Info="modbuild.nmo.net.cn"
+                    Logo="https://speed.nmo.net.cn/icons/bluemap.png" Title="模组3服网页地图" Info="modbuild.nmo.net.cn"
                     EventType="打开网页" EventData="https://map.modbuild.nmo.net.cn/" Type="Clickable" />
         <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://map.build.nmo.net.cn/assets/logo.png" Title="建筑服网页地图" Info="mc.nmo.net.cn"
+                    Logo="https://speed.nmo.net.cn/icons/bluemap.png" Title="建筑服网页地图" Info="mc.nmo.net.cn"
                     EventType="打开网页" EventData="https://map.build.nmo.net.cn/" Type="Clickable" />
         <TextBlock TextWrapping="Wrap" Text=" ========资源&amp;工具网站汇总======== " Margin="5,0" Foreground="{DynamicResource ColorBrush3}" HorizontalAlignment="Center" FontSize="18" />
         <local:MyListItem  Margin="-5,2,-5,8"
