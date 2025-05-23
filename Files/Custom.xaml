@@ -52,168 +52,24 @@
 
 <local:MyCard Margin="0,0,0,15" CanSwap="False">
     <StackPanel Margin="15,10">
+        <local:MyListItem Margin="0,1" ToolTip="查看服务器公告" LogoScale="1.04"
+        Logo="https://speed.nmo.net.cn/icons/HangingSign.webp" Title="服务器公告" Info="包含了服务器更新日志以及原版服活动"
+        EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/Notice.json" Type="Clickable" />
         <local:MyListItem Margin="0,1" ToolTip="点击查看社团活动" LogoScale="1.04"
-        Logo="https://speed.nmo.net.cn/icons/diamond_pickaxe.webp" Title="社团活动" Info="点击查看社团活动"
+        Logo="https://speed.nmo.net.cn/icons/cake.webp" Title="社团活动" Info="点击查看社团活动"
         EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/RecentEvents.json" Type="Clickable" />
+        <local:MyListItem Margin="0,1" ToolTip="点击查看" LogoScale="1.04"
+        Logo="https://speed.nmo.net.cn/icons/compass.png" Title="网站汇总" Info="包含NMO官网，皮肤站，网页地图以及一些工具网站"
+        EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/Webpages.json" Type="Clickable" />
+        <local:MyListItem Margin="0,1" ToolTip="点击查看" LogoScale="1.04"
+        Logo="https://speed.nmo.net.cn/icons/ShulkerBox.webp" Title="安装整合包" Info="安装各模组服对应的整合包"
+        EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/Downloads.json" Type="Clickable" />
         <local:MyListItem Margin="0,1" ToolTip="点击阅读社刊" LogoScale="1.04"
         Logo="https://speed.nmo.net.cn/icons/bookshelf.webp" Title="阅读社刊" Info="点击阅读社刊"
         EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/Magazines.json" Type="Clickable" />
-    </StackPanel>
-</local:MyCard>
-
-<local:MyCard Title="网站汇总" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
-    <StackPanel Margin="25,40,23,15">
-        <TextBlock TextWrapping="Wrap" Text=" ========NMO网站======== " Margin="5,0" Foreground="{DynamicResource ColorBrush3}" HorizontalAlignment="Center" FontSize="18" />
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://www.nmo.net.cn/favicon.ico" Title="官网" Info="南大Minecraft协会官方网站"
-                    EventType="打开网页" EventData="https://www.nmo.net.cn/" Type="Clickable" />
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://speed.nmo.net.cn/icons/NMO_intel.ico" Title="皮肤站" Info="仅限南大邮箱注册~"
-                    EventType="打开网页" EventData="https://skin.nmo.net.cn/user" Type="Clickable" />
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://wiki.nmo.net.cn/_assets/favicons/apple-touch-icon.png" Title="文档站" Info="这里包含了与社团、服务器等相关的各种信息，以及许多教程和技术文档"
-                    EventType="打开网页" EventData="https://wiki.nmo.net.cn/" Type="Clickable" />
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://space.bilibili.com/favicon.ico" Title="官方B站主页" Info="南京大学MC社团NMO"
-                    EventType="打开网页" EventData="https://space.bilibili.com/646892894" Type="Clickable" />
-        <TextBlock TextWrapping="Wrap" Text=" ========网页地图======== " Margin="5,0" Foreground="{DynamicResource ColorBrush3}" HorizontalAlignment="Center" FontSize="18" />
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://speed.nmo.net.cn/icons/bluemap.png" Title="生存服网页地图" Info="mc.nmo.net.cn"
-                    EventType="打开网页" EventData="https://map.survival.nmo.net.cn/" Type="Clickable" />
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://speed.nmo.net.cn/icons/bluemap.png" Title="模组1服网页地图" Info="mod.nmo.net.cn"
-                    EventType="打开网页" EventData="https://map.mod.nmo.net.cn/" Type="Clickable" />
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://speed.nmo.net.cn/icons/bluemap.png" Title="模组3服网页地图" Info="modbuild.nmo.net.cn"
-                    EventType="打开网页" EventData="https://map.modbuild.nmo.net.cn/" Type="Clickable" />
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://speed.nmo.net.cn/icons/bluemap.png" Title="建筑服网页地图" Info="mc.nmo.net.cn"
-                    EventType="打开网页" EventData="https://map.build.nmo.net.cn/" Type="Clickable" />
-        <TextBlock TextWrapping="Wrap" Text=" ========资源&amp;工具网站汇总======== " Margin="5,0" Foreground="{DynamicResource ColorBrush3}" HorizontalAlignment="Center" FontSize="18" />
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://www.minecraft.net/etc.clientlibs/minecraftnet/clientlibs/clientlib-site/resources/favicon.ico" Title="官方网站" Info="Minecraft官方网站（冷知识：其实minecraft.com之前是一个矿业公司的网站）"
-                    EventType="打开网页" EventData="https://www.minecraft.net/zh-hans" Type="Clickable" />
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://speed.nmo.net.cn/icons/minecraftwiki.ico" Title="Minecraft Wiki" Info="中文Minecraft Wiki（再见了Fandom）"
-                    EventType="打开网页" EventData="https://zh.minecraft.wiki/" Type="Clickable" />
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://www.mcmod.cn/favicon.ico" Title="MC百科" Info="最大的Minecraft中文MOD百科"
-                    EventType="打开网页" EventData="https://www.mcmod.cn/" Type="Clickable" />
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://speed.nmo.net.cn/icons/curseforge.ico" Title="CurseForge" Info="全球最大的游戏MOD资源下载站，有各类MOD，整合包和资源包等"
-                    EventType="打开网页" EventData="https://www.curseforge.com/minecraft" Type="Clickable" />
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://modrinth.com/favicon.ico" Title="Modrinth" Info="较新的MOD资源下载站"
-                    EventType="打开网页" EventData="https://modrinth.com/" Type="Clickable" />
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://www.chunkbase.com/favicon.ico" Title="Chunkbase" Info="根据种子查询群系，结构，史莱姆区块等"
-                    EventType="打开网页" EventData="https://www.chunkbase.com/apps/" Type="Clickable" />
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://minecraft.tools/favicon.ico" Title="Minecraft Tools" Info="一个有烟花制作，自定义旗帜，附魔计算等功能的工具站，可惜没有中文"
-                    EventType="打开网页" EventData="https://minecraft.tools/en/" Type="Clickable" />
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://speed.nmo.net.cn/icons/namemc.ico" Title="Name MC" Info="最大的MC皮肤站"
-                    EventType="打开网页" EventData="https://zh-cn.namemc.com/minecraft-skins" Type="Clickable" />
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://littleskin.cn/favicon.png" Title="little skin" Info="最大的国内MC皮肤站"
-                    EventType="打开网页" EventData="https://littleskin.cn/" Type="Clickable" />
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://klpbbs.com/favicon.ico" Title="苦力怕论坛" Info="一个相对新的论坛，有各种资源文件下载"
-                    EventType="打开网页" EventData="https://klpbbs.com/" Type="Clickable" />
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://www.armortrims.com/favicon.ico" Title="ArmorTrims" Info="一个可以用于设计盔甲纹饰搭配的网站"
-                    EventType="打开网页" EventData="https://www.armortrims.com/" Type="Clickable" />
-    </StackPanel>
-</local:MyCard>
-
-<local:MyCard Title="整合包下载" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
-    <StackPanel Margin="25,40,23,15">
-    <local:MyHint Margin="0,6,0,10" Text="此处提供的整合包不一定是最新版，如果进不去服务器请以群文件为准" IsWarn="False" />
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" /> 
-                <ColumnDefinition Width="*" /> 
-            </Grid.ColumnDefinitions>
-            <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" ColorType="Highlight"
-                        Text="模组1服" EventType="下载文件" EventData="https://speed.nmo.net.cn/files/flywheel-gregtech.zip" ToolTip="飞轮格雷整合包" />
-            <local:MyButton Grid.Column="1" Margin="0,0,10,0" Height="35" ColorType="Highlight"
-                        Text="模组2服" EventType="弹出窗口" EventData="这里没有哦|格雷科技整合包需要您自行安装\n如果需要帮助，可以加入模组服QQ群" ToolTip="格雷科技整合包" />
-            <local:MyButton Grid.Column="2" Margin="0,0,10,0" Height="35" ColorType="Highlight"
-                        Text="模组3服" EventType="下载文件" EventData="https://speed.nmo.net.cn/files/mod3client.zip" ToolTip="城市建设整合包" />
-        </Grid>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" /> 
-            </Grid.ColumnDefinitions>
-            <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" ColorType="Highlight" ToolTip="支持zip,rar,mrpack格式的整合包"
-                        Text="安装下载的整合包" EventType="安装整合包" />
-            <local:MyButton Grid.Column="1" Margin="0,10,10,0" Height="35" ColorType="Highlight" ToolTip="通过网页跳转"
-                        Text="加入模组服QQ群" EventType="打开网页"
-                        EventData="https://qm.qq.com/cgi-bin/qm/qr?k=TzjrvU6pd9SsTBgTanPuuSp_RiMvZkYo&amp;jump_from=webapi&amp;authKey=I81anCFnQKcNWH0Mze5tpOxEkht2uLB0M6qbSbebr6E+OBuZRBMqKInD33n4UrjH" />
-        </Grid>
-    </StackPanel>
-</local:MyCard>
-
-<local:MyCard Title="加入我们" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
-    <StackPanel Margin="25,40,23,15">
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Image Grid.Column="0" Height="150" HorizontalAlignment="Center"
-                   Source="https://speed.nmo.net.cn/icons/qqun.png"
-                   Margin="0,0,0,0">
-            <Image.OpacityMask>
-                <ImageBrush ImageSource="https://speed.nmo.net.cn/icons/qqun.png" />
-            </Image.OpacityMask>
-            </Image>
-            <Image Grid.Column="1" Height="150" HorizontalAlignment="Center"
-                   Source="https://speed.nmo.net.cn/icons/pindao.png"
-                   Margin="0,0,0,0">
-            <Image.OpacityMask>
-                <ImageBrush ImageSource="https://speed.nmo.net.cn/icons/pindao.png" />
-            </Image.OpacityMask>
-            </Image>
-            <Image Grid.Column="2" Height="150" HorizontalAlignment="Center"
-                   Source="https://speed.nmo.net.cn/icons/kook.png"
-                   Margin="0,0,0,0">
-            <Image.OpacityMask>
-                <ImageBrush ImageSource="https://speed.nmo.net.cn/icons/kook.png" />
-            </Image.OpacityMask>
-            </Image>
-        </Grid>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <local:MyButton Grid.Column="0" Margin="10,10,10,0" Height="35" Width="145" 
-                         HorizontalAlignment="Center"
-                         ColorType="Highlight"
-                         Text="对外交流群" 
-                         EventType="打开网页" 
-                         EventData="https://qm.qq.com/q/Bs08NtMXQe&amp;personal_qrcode_source=1001" 
-                         ToolTip="点击跳转"/>
-            <local:MyButton Grid.Column="1" Margin="10,10,10,0" Height="35" Width="145"  
-                         HorizontalAlignment="Center"
-                         ColorType="Highlight"
-                         Text="QQ频道" 
-                         EventType="打开网页" 
-                         EventData="https://pd.qq.com/s/20vwol8k9?b=5" 
-                         ToolTip="点击跳转"/>
-            <local:MyButton Grid.Column="2" Margin="10,10,10,0" Height="35" Width="145" 
-                         HorizontalAlignment="Center"
-                         ColorType="Highlight"
-                         Text="Kook语音" 
-                         EventType="打开网页" 
-                         EventData="https://kook.vip/wq7ett" 
-                         ToolTip="点击跳转"/>
-        </Grid>
+        <local:MyListItem Margin="0,1" ToolTip="点击查看" LogoScale="1.04"
+        Logo="https://speed.nmo.net.cn/icons/Recompass.png" Title="加入我们" Info="加入大群，频道，kook语音以及NMO各部门"
+        EventType="打开帮助" EventData="https://speed.nmo.net.cn/files/pcl/Joinus.json" Type="Clickable" />
     </StackPanel>
 </local:MyCard>
 
@@ -230,7 +86,7 @@
                 <TextBlock TextWrapping="Wrap" Margin="0,0,0,8"
                     Text="作者: Iodine_chloride" />
                 <TextBlock TextWrapping="Wrap" Margin="0,0,0,8" FontSize="11"
-                    Text="版本: Beta 0.3.0" />
+                    Text="版本: Beta 0.4.0" />
                 <TextBlock TextWrapping="Wrap" Margin="0,0,0,8" FontSize="11"
                     Text="Powered by NMO" />
             </StackPanel>
