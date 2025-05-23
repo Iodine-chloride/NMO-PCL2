@@ -4,7 +4,7 @@
         <Run Foreground="#E9C31A" Text="Minecraft"/>
         <Run Foreground="#80227A" Text="协会 || NJU"/>
         <Run Foreground="#E9C31A" Text="Minecraft"/>
-        <Run Foreground="#80227A" Text=" Organization"/>
+        <Run Foreground="#80227A" Text="Organization"/>
     </TextBlock>
     <StackPanel Margin="0,0,0,15">
         <Grid>
