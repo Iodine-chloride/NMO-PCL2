@@ -1,30 +1,62 @@
 <local:MyCard Margin="0,0,0,15" CanSwap="False">
     <StackPanel Margin="15,10">
         <TextBlock TextWrapping="Wrap" Margin="-10,0,0,4" FontSize="24" Text="【动画组第九届创作挑战】"/>
-        <TextBlock TextWrapping="Wrap" Margin="-5,0,0,4" FontSize="20" Text=" 动画组第十届常规活动：主题创作挑战要开始啦，有意参加的同学可以在群聊内以 提名：XX 的形式提名创作主题， "/>
-        <TextBlock TextWrapping="Wrap" Margin="-5,0,0,4" FontSize="20" Text=" 提名ddl为5月22日晚24点 "/>
-        <TextBlock TextWrapping="Wrap" Margin="-5,0,0,4" FontSize="20" Text=" 创作ddl为6月29日晚24点"/>
-        <TextBlock TextWrapping="Wrap" Margin="-5,0,0,4" FontSize="20" Text=" 欢迎大家踊跃提名（加入NMO动画组群聊参与提名） "/>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Image Grid.Column="0" Height="150" HorizontalAlignment="Left"
-                   Source="https://speed.nmo.net.cn/icons/donghuazu.png"
-                   Margin="0,0,0,0">
-            <Image.OpacityMask>
-                <ImageBrush ImageSource="https://speed.nmo.net.cn/icons/donghuazu.png" />
-            </Image.OpacityMask>
-            </Image>
-            <local:MyButton Grid.Column="1" Margin="10,10,10,0" Height="35" Width="145" 
-                         HorizontalAlignment="Right"
-                         ColorType="Highlight"
-                         Text="NMO动画组群" 
-                         EventType="打开网页" 
-                         EventData="https://qm.qq.com/q/qSmFeY6kJW" 
-                         ToolTip="点击跳转"/>
-        </Grid>
+        <TextBlock TextWrapping="Wrap" Margin="-5,0,0,4" FontSize="20" Text=" 动画组第九届创作挑战  主题：战斗爽 "/>
+        <TextBlock TextWrapping="Wrap" Margin="-5,0,0,4" FontSize="20" Text=" 以下是作品一览 "/>
+        <Image Width="800" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/nmoani/9/1.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/nmoani/9/1.jpg" />
+        </Image.OpacityMask>
+        </Image>
+        <Image Width="800" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/nmoani/9/2.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/nmoani/9/2.jpg" />
+        </Image.OpacityMask>
+        </Image>
+        <Image Width="800" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/nmoani/9/3.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/nmoani/9/3.jpg" />
+        </Image.OpacityMask>
+        </Image>
+        <Image Width="800" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/nmoani/9/4.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/nmoani/9/4.jpg" />
+        </Image.OpacityMask>
+        </Image>
+        <Image Width="800" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/nmoani/9/5.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/nmoani/9/5.jpg" />
+        </Image.OpacityMask>
+        </Image>
+        <Image Width="800" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/nmoani/9/6.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/nmoani/9/6.jpg" />
+        </Image.OpacityMask>
+        </Image>
+        <Image Width="800" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/nmoani/9/7.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/nmoani/9/7.jpg" />
+        </Image.OpacityMask>
+        </Image>
+        <Image Width="800" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/nmoani/9/8.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/nmoani/9/8.jpg" />
+        </Image.OpacityMask>
+        </Image>
+        <Image Width="800" HorizontalAlignment="Center" 
+                Source="https://speed.nmo.net.cn/files/pcl/nmoani/9/9.jpg">
+        <Image.OpacityMask>
+            <ImageBrush ImageSource="https://speed.nmo.net.cn/files/pcl/nmoani/9/9.jpg" />
+        </Image.OpacityMask>
+        </Image>
     </StackPanel>
 </local:MyCard>
 
