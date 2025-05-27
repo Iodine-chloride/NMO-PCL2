@@ -30,8 +30,8 @@
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Margin="0,0,0,15" CanSwap="False">
-    <StackPanel Margin="15,10">
+<local:MyCard Title="加入NMO动画组" Margin="0,0,0,15" CanSwap="True" IsSwaped="True" >
+    <StackPanel Margin="15,40,23,15">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
@@ -64,7 +64,7 @@
                 <ImageBrush ImageSource="https://speed.nmo.net.cn/icons/nmo2024.png" />
             </Image.OpacityMask>
             </Image>
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="4,0,0,8" Text="页面维护：Iodine_chloride" />
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin="4,0,0,8" Text="数据来源：olozhika472 | 页面维护：Iodine_chloride" />
         </StackPanel>
         <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right" Margin="-4,0,0,0">
             <local:MyIconTextButton HorizontalAlignment="Left" Text="提交反馈" ToolTip="有问题或者建议可以在这里提交哦" EventType="打开网页"
