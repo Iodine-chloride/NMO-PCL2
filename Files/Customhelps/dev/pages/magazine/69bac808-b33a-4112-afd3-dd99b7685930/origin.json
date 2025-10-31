@@ -1,0 +1,22 @@
+{
+  "entity": {
+    "pin": false,
+    "title": "南京大学学生Minecraft协会社刊 第2期",
+    "brief": "原官网由Windy_windie发布",
+    "date": "2024-09-29",
+    "endDate": "2026-10-28",
+    "image": "/necore/contents/69bac808-b33a-4112-afd3-dd99b7685930/Page_1_docsmall.com.jpg"
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "content": "<a href=\"/necore/contents/69bac808-b33a-4112-afd3-dd99b7685930/NMO社刊第2期.pdf\" download>NMO社刊第2期 下载</a>\n<a href=\"/necore/contents/69bac808-b33a-4112-afd3-dd99b7685930/NMO社刊第2期-网络压缩版.pdf\" download>NMO社刊第2期-网络压缩版 下载</a>\n"
+    },
+    {
+      "type": "pdf_file",
+      "content": "/necore/contents/69bac808-b33a-4112-afd3-dd99b7685930/NMO社刊第2期-网络压缩版.pdf"
+    }
+  ],
+  "category": "magazine",
+  "author": "Iodine_chloride"
+}

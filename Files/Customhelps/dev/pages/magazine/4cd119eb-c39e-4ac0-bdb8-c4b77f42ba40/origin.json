@@ -1,0 +1,22 @@
+{
+  "entity": {
+    "pin": false,
+    "title": "南京大学学生Minecraft协会周报 第2期",
+    "brief": "原官网由Windy_windie发布",
+    "date": "2024-09-15",
+    "endDate": "2026-10-28",
+    "image": "/necore/contents/4cd119eb-c39e-4ac0-bdb8-c4b77f42ba40/Page_1_docsmall.com.jpg"
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "content": "<a href=\"/necore/contents/4cd119eb-c39e-4ac0-bdb8-c4b77f42ba40/NMO周报第2期.pdf\" download>NMO周报第2期 下载</a>\n"
+    },
+    {
+      "type": "pdf_file",
+      "content": "/necore/contents/4cd119eb-c39e-4ac0-bdb8-c4b77f42ba40/NMO周报第2期.pdf"
+    }
+  ],
+  "category": "magazine",
+  "author": "Iodine_chloride"
+}

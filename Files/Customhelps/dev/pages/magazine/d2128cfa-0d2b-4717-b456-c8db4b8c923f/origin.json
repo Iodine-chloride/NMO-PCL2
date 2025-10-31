@@ -1,0 +1,22 @@
+{
+  "entity": {
+    "pin": false,
+    "title": "南京大学学生Minecraft协会周报 第8期",
+    "brief": "原官网由Windy_windie发布",
+    "date": "2024-10-27",
+    "endDate": "2026-10-28",
+    "image": "/necore/contents/d2128cfa-0d2b-4717-b456-c8db4b8c923f/Page_1_docsmall.com.jpg"
+  },
+  "content": [
+    {
+      "type": "markdown",
+      "content": "<a href=\"/necore/contents/d2128cfa-0d2b-4717-b456-c8db4b8c923f/NMO周报第8期.pdf\" download>NMO周报第8期 下载</a>\n\n"
+    },
+    {
+      "type": "pdf_file",
+      "content": "/necore/contents/d2128cfa-0d2b-4717-b456-c8db4b8c923f/NMO周报第8期.pdf"
+    }
+  ],
+  "category": "magazine",
+  "author": "Iodine_chloride"
+}
