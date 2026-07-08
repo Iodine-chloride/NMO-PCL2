@@ -590,7 +590,7 @@ def run_command():
                     # 替换URL
                     new_content = content.replace(
                         "http://127.0.0.1:8000", 
-                        "https://cus.nmo.net.cn:25569"
+                        "https://cus.nmo.net.cn"
                     )
                     
                     with open(file_path, 'w', encoding='utf-8') as f:
