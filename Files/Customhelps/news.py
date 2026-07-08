@@ -382,7 +382,6 @@ def sync_magazines():
         # 如果有变化，更新main.xaml
         if new_uuids or deleted_uuids:
             update_main_xaml(local_magazine_path)
-        
         return True
         
     except Exception as e:
