@@ -51,13 +51,13 @@
     <StackPanel Margin="15,10">
         <local:MyListItem Margin="0,1" ToolTip="查看官网公告" LogoScale="1.04"
         Logo="http://127.0.0.1:8000/icons/mc/HangingSign.webp" Title="官网公告" Info="点击查看官网公告"
-        EventType="打开帮助" EventData="http://127.0.0.1:8000/files/pcl/Notice.json" Type="Clickable" />
+        EventType="打开帮助" EventData="http://127.0.0.1:8000/pages/notice/main.json" Type="Clickable" />
         <local:MyListItem Margin="0,1" ToolTip="点击查看社团活动" LogoScale="1.04"
         Logo="http://127.0.0.1:8000/icons/mc/cake.webp" Title="社团活动" Info="点击查看社团活动"
-        EventType="打开帮助" EventData="http://127.0.0.1:8000/files/pcl/RecentEvents.json" Type="Clickable" />
+        EventType="打开帮助" EventData="http://127.0.0.1:8000/pages/activity/main.json" Type="Clickable" />
         <local:MyListItem Margin="0,1" ToolTip="点击查看咨询内容" LogoScale="1.04"
         Logo="http://127.0.0.1:8000/icons/mc/ShulkerBox.webp" Title="新鲜资讯" Info="点击查看咨询内容"
-        EventType="打开帮助" EventData="http://127.0.0.1:8000/files/pcl/Downloads.json" Type="Clickable" />
+        EventType="打开帮助" EventData="http://127.0.0.1:8000/pages/information/main.json" Type="Clickable" />
         <local:MyListItem Margin="0,1" ToolTip="点击阅读社刊" LogoScale="1.04"
         Logo="http://127.0.0.1:8000/icons/mc/bookshelf.webp" Title="往期社刊" Info="点击阅读社刊"
         EventType="打开帮助" EventData="http://127.0.0.1:8000/pages/magazine/main.json" Type="Clickable" />
@@ -83,7 +83,7 @@
                 <TextBlock TextWrapping="Wrap" Margin="0,0,0,8"
                     Text="作者: Iodine_chloride" />
                 <TextBlock TextWrapping="Wrap" Margin="0,0,0,8" FontSize="11"
-                    Text="版本: Beta 0.4.0" />
+                    Text="版本: Beta 0.5.0" />
                 <TextBlock TextWrapping="Wrap" Margin="0,0,0,8" FontSize="11"
                     Text="Powered by NMO" />
             </StackPanel>

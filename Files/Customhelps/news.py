@@ -10,6 +10,165 @@ from typing import List, Dict
 from datetime import datetime
 import fitz  # PyMuPDF for PDF processing
 
+CATEGORY_CONFIG = {
+    'information': {
+        'folder': 'information',
+        'title_latest': '最新资讯',
+        'title_past': '往期资讯',
+        'icon': 'Golden_Carrot.webp',
+    },
+    'notice': {
+        'folder': 'notice',
+        'title_latest': '最新公告',
+        'title_past': '往期公告',
+        'icon': 'Bread.png',
+    },
+    'activity': {
+        'folder': 'activity',
+        'title_latest': '最新活动',
+        'title_past': '往期活动',
+        'icon': 'Glistering_Melon.webp',
+    }
+}
+
+def xml_escape(text: str) -> str:
+    """将文本中的特殊字符转义为 XML 实体"""
+    if not isinstance(text, str):
+        return text
+    # 注意顺序：& 必须最先转义，避免重复转义
+    return (text
+            .replace('&', '&amp;')
+            .replace('<', '&lt;')
+            .replace('>', '&gt;')
+            .replace('"', '&quot;')
+            .replace("'", '&apos;'))
+
+def ensure_category_pages_exist(category: str):
+    """确保页面文件存在，从 sample 复制或创建默认"""
+    config = CATEGORY_CONFIG[category]
+    pages_dir = f"dev/pages/{config['folder']}"
+    os.makedirs(pages_dir, exist_ok=True)
+
+    xaml_path = os.path.join(pages_dir, "main.xaml")
+    json_path = os.path.join(pages_dir, "main.json")
+    sample_dir = f"dev/pages-sample/{config['folder']}"
+
+    if not os.path.exists(xaml_path):
+        sample_xaml = os.path.join(sample_dir, "main.xaml")
+        if os.path.exists(sample_xaml):
+            shutil.copy2(sample_xaml, xaml_path)
+            print(f"已从 {sample_xaml} 复制 main.xaml")
+        else:
+            with open(xaml_path, 'w', encoding='utf-8') as f:
+                f.write(config['default_xaml'])
+            print("已创建默认 main.xaml")
+
+    if not os.path.exists(json_path):
+        sample_json = os.path.join(sample_dir, "main.json")
+        if os.path.exists(sample_json):
+            shutil.copy2(sample_json, json_path)
+            print(f"已从 {sample_json} 复制 main.json")
+        else:
+            with open(json_path, 'w', encoding='utf-8') as f:
+                json.dump({"Title": f"{config['title_latest']}"}, f, ensure_ascii=False)
+            print("已创建默认 main.json")
+
+def update_category_main_xaml(category: str, articles: List[Dict]):
+    """更新指定分类的 main.xaml 中的两个卡片内容"""
+    config = CATEGORY_CONFIG[category]
+    if not articles:
+        print(f"没有{category}数据，跳过更新")
+        return
+
+    sorted_articles = sorted(articles, key=lambda x: x.get('date', ''), reverse=True)
+    latest = sorted_articles[:1]      # 只取最新一条作为“最新”卡片
+    past = sorted_articles[1:]        # 其余为“往期”
+
+    def make_items(items):
+        lines = []
+        for item in items:
+            title = xml_escape(item.get('title', '无标题'))
+            brief = xml_escape(item.get('brief', ''))
+            uuid = item.get('id', '')
+            link = f"https://nmo.net.cn:25569/news/detail/{uuid}"
+            lines.append(f'        <local:MyListItem  Margin="-5,2,-5,8"')
+            lines.append(f'                    Logo="http://127.0.0.1:8000/icons/mc/{config["icon"]}" Title="{title}" Info="{brief}"')
+            lines.append(f'                    EventType="打开网页" EventData="{link}" Type="Clickable" />')
+        return "\n".join(lines)
+
+    latest_xaml = make_items(latest)
+    past_xaml = make_items(past)
+
+    xaml_path = f"dev/pages/{config['folder']}/main.xaml"
+    ensure_category_pages_exist(category)  # 确保文件存在
+
+    with open(xaml_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    # 替换最新卡片内容（使用配置中的标题）
+    pattern_latest = rf'(<local:MyCard Title="{config["title_latest"]}"[^>]*>\s*<StackPanel[^>]*>)(.*?)(</StackPanel>)'
+    content = re.sub(pattern_latest,
+                     lambda m: m.group(1) + '\n' + latest_xaml + '\n    ' + m.group(3),
+                     content, flags=re.DOTALL)
+
+    # 替换往期卡片内容
+    pattern_past = rf'(<local:MyCard Title="{config["title_past"]}"[^>]*>\s*<StackPanel[^>]*>)(.*?)(</StackPanel>)'
+    content = re.sub(pattern_past,
+                     lambda m: m.group(1) + '\n' + past_xaml + '\n    ' + m.group(3),
+                     content, flags=re.DOTALL)
+
+    with open(xaml_path, 'w', encoding='utf-8') as f:
+        f.write(content)
+
+    print(f"{category} main.xaml 更新完成：最新 {len(latest)} 条，往期 {len(past)} 条")
+
+def get_all_articles_by_category(category: str) -> List[Dict]:
+    """分页获取指定分类的所有文章"""
+    base_url = "https://nmo.net.cn:25569/necore"
+    all_articles = []
+    page = 1
+    page_size = 50
+
+    while True:
+        try:
+            url = f"{base_url}/news/list"
+            payload = {
+                "target": category,
+                "page": page,
+                "page_size": page_size,
+                "pin": False
+            }
+            response = requests.post(url, json=payload)
+            if response.status_code == 200:
+                data = response.json()
+                items = data.get("list", [])
+                if not items:
+                    break
+                all_articles.extend(items)
+                if len(items) < page_size:
+                    break
+                page += 1
+            else:
+                print(f"获取{category}列表失败，状态码: {response.status_code}")
+                break
+        except Exception as e:
+            print(f"获取{category}列表时发生错误: {e}")
+            break
+    return all_articles
+
+def sync_category(category: str):
+    """同步指定分类：获取列表并更新页面"""
+    print(f"开始同步 {category}...")
+    articles = get_all_articles_by_category(category)
+    if articles is None:
+        print(f"获取{category}列表失败")
+        return False
+
+    ensure_category_pages_exist(category)
+    update_category_main_xaml(category, articles)
+    print(f"{category}同步完成")
+    return True
+
 def get_news_detail(news_uuid):
     """
     根据新闻UUID获取新闻详情
@@ -278,8 +437,8 @@ def generate_xaml_item(magazine: Dict) -> str:
     """
     生成单个社刊的XAML项目
     """
-    title = magazine['entity']['title']
-    brief = magazine['entity']['brief']
+    title = xml_escape(magazine['entity']['title'])
+    brief = xml_escape(magazine['entity']['brief'])
     uuid = magazine['uuid']
     
     # 格式化XAML项目
@@ -309,6 +468,9 @@ def update_main_xaml(magazine_path: str):
     
     # 读取原始XAML文件
     xaml_path = os.path.join(magazine_path, "main.xaml")
+
+    shutil.copyfile("dev/pages-sample/magazine/main.xaml", xaml_path)
+    shutil.copyfile("dev/pages-sample/magazine/main.json", os.path.join(magazine_path, "main.json"))
     
     if not os.path.exists(xaml_path):
         print(f"main.xaml文件不存在: {xaml_path}")
@@ -448,16 +610,18 @@ def run_command():
         print(f"启动生产服务器时发生错误: {e}")
 
 def check_command():
-    """
-    check命令：相当于运行原来的news.py（同步社刊）
-    """
+    """执行所有同步"""
     print("开始同步社刊...")
-    success = sync_magazines()
-    
-    if success:
+    success_mag = sync_magazines()
+    if success_mag:
         print("社刊同步成功完成")
     else:
         print("社刊同步失败")
+
+    for cat in ['information', 'notice', 'activity']:
+        success = sync_category(cat)
+        if not success:
+            print(f"{cat}同步失败")
 
 def main():
     """
